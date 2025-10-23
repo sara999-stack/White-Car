@@ -1,0 +1,130 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+  </head>
+<body>
+
+<!-- Franja superior -->
+ <nav class="navbar navbar-expand-lg navbar-white principal">
+  <div class="container">
+    <a class="navbar-brand" href="#">WHITE CAR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fa fa-car"></i> Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="quienes-somos.html"><i class="fa fa-hand-peace-o"></i> Quienes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html"><i class="fa fa-gear"></i> Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeria.html"><i class="fa fa-check-square-o"></i> Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html"><i class="fa fa-address-card-o"></i> Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 fw-bold textoPrincipal" >¿Quiénes somos?</h1>
+    <img src="Img/logo.png" alt="Logo" class="imagenPequena" width="300" height="150">
+    <p class="lead fw-bold">La seguridad de tu empresa a cuatro ruedas</p>
+  </div>
+  <div class="product-device box-shadow d-none d-md-block"></div>
+  <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
+
+<!-- Hero -->
+<section class="bg-light text-center p-">
+    <h1 style="font-weight: bold;"></h1>
+  <!-- Servicios -->
+<section id="servicios" class="container ">
+  <h1 style="font-weight: bold; color: B03636;">Acerca de nosotros</h1>
+
+ <div class="row">
+    <div class="col-12">
+      <div class="card p-3 p-md-5 shadow-sm">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <p class="text-start">
+              Somos una empresa de transporte que se distingue por su innovacion continua, 
+              ofreciendo soluciones que protejen el medio ambiente y mejoran la experiencia de nuestros 
+              usuarios nos enfoncamos en la calidad de cada uno de nuestros servivios y vehiculos, superando 
+              las expectivas de los clientes. Con un fuerte compromiso hacia la sostinibilidad, trabajamos en la 
+              responsabiliad e integridad para garantizar el bienestar de nuestros clientes y aportar al desarrollo 
+              de la sociedad a nivel nacional
+            </p>
+          </div>
+        <!--imagen-->
+<div class="col-12 col-md-4"> <!-- Changed from col-4 to col-12 col-md-4 -->
+  <img src="Img/DSC_9457.jpg" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;"> 
+</div>
+      </div>
+      </section>
+      
+
+<!-- Servicios -->
+    <h1 style="font-weight: bold; color: B03636;">Valores</h1>
+
+    <div class="row">
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm">
+       <h5 style="font-weight: bold; color: B03636">Innovación</h5>
+        <p class="text-start">Somos responsables de la innovación continua y la protección
+hacia el impacto del medio ambiente, indagando siempre nuevas
+soluciones que mejoren la experiencia de conducción.</p>
+
+</div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm ">
+        <h5 style="font-weight: bold; color: B03636">Sostenibilidad</h5>
+        <p class="text-start">Con nuestro equipo de trabajo, contribuiremos a la protección
+medioambiental y producción de productos hacia un nivel ecoló-
+gico y biodegradable de forma precisa dentro del país.</p>
+</div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3 shadow-sm">
+       <h5 style="font-weight: bold; color: B03636">Responsabilidad</h5>
+        <p class="text-start">Ejecutamos con integridad y responsabilidad la toma de todas
+nuestras decisiones y acciones en la marca, avalando al bienestar
+de nuestros clientes y la sociedad a nivel nacional.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 White Car | Todos los derechos reservados</p>
+        <p class="mb-0">Tel: <a href="tel:+573144241908" class="text-decoration-none text-light">314 424 1908</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Validación simple del formulario (opcional)
+      document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Aquí conecta con backend o muestra mensaje de éxito
+        alert('Mensaje enviado (simulado).');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
+
