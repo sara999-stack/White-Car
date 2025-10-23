@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto — White Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-white principal">
+      <div class="container">
+        <a class="navbar-brand" href="#">WHITE CAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-car"></i> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="quienes-somos.html"><i class="fa fa-hand-peace-o"></i> Quienes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fa fa-gear"></i> Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html"><i class="fa fa-check-square-o"></i> Galería</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacto.html"><i class="fa fa-address-card-o"></i> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-bold textoPrincipal">Contacto</h1>
+        <img src="Img/logo.png" alt="Logo" class="imagenPequena my-3" width="300" height="150" />
+        <p class="lead fw-bold">La seguridad de tu empresa a cuatro ruedas</p>
+      </div>
+    </header>
+
+    <!-- Contacto: formulario + datos -->
+    <main class="container py-5">
+      <div class="row g-4">
+        <!-- Formulario -->
+        <div class="col-lg-7">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h5 mb-3">Envíanos un mensaje</h2>
+              <form id="contactForm" action="#" method="post" novalidate>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Correo</label>
+                    <input id="email" name="email" type="email" class="form-control" placeholder="tu@ejemplo.com" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" class="form-control" placeholder="314 000 0000">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" rows="5" class="form-control" placeholder="Escribe tu consulta..." required></textarea>
+                </div>
+
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información de contacto -->
+        <aside class="col-lg-5">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h6">Datos de contacto</h3>
+              <p class="mb-1"><strong>Teléfono:</strong> <a href="tel:+573144241908" class="text-decoration-none text-dark">314 424 1908</a></p>
+              <p class="mb-1"><strong>Correo:</strong> <a href="sp0376737@gmail.com" class="text-decoration-none text-dark">sp0376737@gmail.com</a></p>
+              <p class="mb-3"><strong>Dirección:</strong> Cl. 60a Sur #67-13, Bogotá</p>
+              <p class="mb-"><strong>Instagram</strong> <a href="@whitecarcol" class="text-decoration-none text-dark">@whitecarcol</a></p>
+           
+
+              <h4 class="h6 mt-4">Horario</h4>
+              <p class="mb-3">Lun - Vie: 8:00 - 18:00 · Sáb: 9:00 - 13:00</p>
+
+              <h4 class="h6">Síguenos</h4>
+              <div class="d-flex gap-2 mt-2">
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="btn btn-outline-dark btn-sm"><i class="fa fa-twitter"></i></a>
+              </div>
+
+              <hr class="my-4">
+
+              <h5 class="h6">Encuéntranos</h5>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps?q=bogota&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps?q=Madelena,+Ciudad+Bol%C3%ADvar,+Autopista+Sur,+Calle+68+Sur+%26+Carrera+70C,+Bogot%C3%A1&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 White Car | Todos los derechos reservados</p>
+        <p class="mb-0">Tel: <a href="tel:+573144241908" class="text-decoration-none text-light">314 424 1908</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Validación simple del formulario (opcional)
+      document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Aquí conecta con backend o muestra mensaje de éxito
+        alert('Mensaje enviado (simulado).');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
