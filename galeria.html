@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Galería — White Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <style>
+      /* Estilos rápidos para mejorar el aspecto */
+      .hero {
+        background: linear-gradient(135deg,#fff5f5,#fff);
+        padding: 3.5rem 0;
+      }
+      .gallery-img {
+        transition: transform .25s ease, filter .25s;
+        cursor: pointer;
+        object-fit: cover;
+        height: 220px;
+        width: 100%;
+      }
+      .card-hover:hover .gallery-img { transform: scale(1.05); filter: brightness(.95); }
+      .tag-2 { font-weight:700; background:#b03636; color:#fff; border-radius:.25rem; padding:.25rem .5rem; text-decoration:none; }
+      .card-caption { position:absolute; bottom:.5rem; left:.5rem; background:rgba(0,0,0,.5); color:#fff; padding:.25rem .5rem; border-radius:.25rem; font-size:.9rem; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-white principal">
+      <div class="container">
+        <a class="navbar-brand" href="#">WHITE CAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-car"></i> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="quienes-somos.html"><i class="fa fa-hand-peace-o"></i> Quienes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fa fa-gear"></i> Servicios</a></li>
+            <li class="nav-item"><a class="nav-link active" href="galeria.html"><i class="fa fa-check-square-o"></i> Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fa fa-address-card-o"></i> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero text-center">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+          <h1 class="display-4 fw-bold textoPrincipal mb-0">Galería</h1>
+          <a></a>
+        </div>
+        <img src="Img/logo.png" alt="Logo" class="imagenPequena mb-3" width="260" height="120" />
+        <p class="lead fw-bold">La seguridad de tu empresa a cuatro ruedas</p>
+      </div>
+    </header>
+
+    <main class="container py-4">
+      <h2 class="text-center mb-4 fw-bold" style="color:#b03636">Nuestros modelos</h2>
+
+      <div class="row g-4">
+        <!-- Gallery items: cada tarjeta abre un modal con detalle -->
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-hover position-relative overflow-hidden shadow-sm">
+            <a class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#galleryModal"
+               data-src="img/6cdd3f1b-884a-448f-b65f-334f05f568af-removebg-preview.png"
+               data-title="Auto 1" data-desc="Blanco — 2024 — Excelente estado">
+              <img src="Img/6cdd3f1b-884a-448f-b65f-334f05f568af-removebg-preview.png" class="gallery-img" alt="Auto 1">
+              <span class="card-caption">Auto 1</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-hover position-relative overflow-hidden shadow-sm">
+            <a class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#galleryModal"
+               data-src="img/cf2122e7-1799-47cd-b6b4-de23b1c74fde-removebg-preview.png"
+               data-title="Auto 2" data-desc="Rojo — Equipado — Bajo consumo">
+              <img src="Img/cf2122e7-1799-47cd-b6b4-de23b1c74fde-removebg-preview.png" class="gallery-img" alt="Auto 2">
+              <span class="card-caption">Auto 2</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-hover position-relative overflow-hidden shadow-sm">
+            <a class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#galleryModal"
+               data-src="img/78c15bb3-9bf9-4969-b1ec-3600d32e1fdb-removebg-preview.png"
+               data-title="Auto 3" data-desc="Negro — Deportivo — 2 puertas">
+              <img src="Img/78c15bb3-9bf9-4969-b1ec-3600d32e1fdb-removebg-preview.png" class="gallery-img" alt="Auto 3">
+              <span class="card-caption">Auto 3</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-hover position-relative overflow-hidden shadow-sm">
+            <a class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#galleryModal"
+               data-src="img/0f1ba976-6455-47ed-a5f6-1103343d4407-removebg-preview.png"
+               data-title="Auto 4" data-desc="Gris — Familiar — 5 plazas">
+              <img src="Img/0f1ba976-6455-47ed-a5f6-1103343d4407-removebg-preview.png" class="gallery-img" alt="Auto 4">
+              <span class="card-caption">Auto 4</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-hover position-relative overflow-hidden shadow-sm">
+            <a class="gallery-item d-block" data-bs-toggle="modal" data-bs-target="#galleryModal"
+               data-src="img/439385f0-d750-432f-b099-cb42d993ea65-removebg-preview.png"
+               data-title="Auto 5" data-desc="Blanco — Económico — Bajo kilometraje">
+              <img src="Img/439385f0-d750-432f-b099-cb42d993ea65-removebg-preview.png" class="gallery-img" alt="Auto 5">
+              <span class="card-caption">Auto 5</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal único para ver detalle -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="modalTitle"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-8">
+                <img id="modalImage" src={data-src} alt="" class="img-fluid rounded">
+              </div>
+              <div class="col-md-4">
+                <h6 class="mb-2">Descripción</h6>
+                <p id="modalDesc" class="small text-muted"></p>
+                <div class="mt-4">
+                  <a id="contactBtn" href="contacto.html" class="btn btn-primary w-100">Consultar</a>
+                  <a id="openNew" class="btn btn-outline-secondary w-100 mt-2" target="_blank" rel="noopener noreferrer">Abrir en nueva pestaña</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<footer class="bg-dark text-light text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 White Car | Todos los derechos reservados</p>
+        <p class="mb-0">Tel: <a href="tel:+573144241908" class="text-decoration-none text-light">314 424 1908</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Validación simple del formulario (opcional)
+      document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Aquí conecta con backend o muestra mensaje de éxito
+        alert('Mensaje enviado (simulado).');
+        this.reset();
+      });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', function () {
+        const src = this.getAttribute('data-src');
+        const title = this.getAttribute('data-title');
+        const desc = this.getAttribute('data-desc');
+
+        modalImage.src = src;
+        modalTitle.textContent = title;
+        modalDesc.textContent = desc;
+      });
+    });
+  });
+    </script>
+  </body>
+</html>
